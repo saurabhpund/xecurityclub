@@ -38,6 +38,8 @@ video {
   height: 100%;
   object-fit: cover;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: -1; /* Place the video behind other elements */
 }
 
@@ -134,49 +136,8 @@ footer {
   color: #fff !important;
 }
 
-.parent {
-  display: grid;
-  /* background-color: var(--background-color-900); */
-  padding: 1rem;
-  border-radius: 15px;
-  grid-template-columns: repeat(12, .5fr);
-  grid-template-rows: repeat(5, .4fr);
-  gap: 10px;
-  grid-template-areas: 
-  " Div5 Div5 Div5 Div5 Div5 Div5 Div5 Div5 Div3 Div3 Div3 Div3 "
-  " Div1 Div1 Div1 Div1 Div4 Div4 Div4 Div4 Div6 Div6 Div6 Div6"
-  " Div1 Div1 Div1 Div1 Div4 Div4 Div4 Div4 Div6 Div6 Div6 Div6"
-  " Div1 Div1 Div1 Div1 Div2 Div2 Div2 Div2 Div2 Div2 Div2 Div2"
-  " Div1 Div1 Div1 Div1 Div2 Div2 Div2 Div2 Div2 Div2 Div2 Div2"
-
-  ;
-}
 
 
-.parent > div{
-  border-radius: 15px;
-}
-
-
-
-.div1 {
-  grid-area: Div1;
-}
-.div2 {
-  grid-area: Div2;
-}
-.div3 {
-  grid-area: Div3;
-}
-.div4 {
-  grid-area: Div4;
-}
-.div5 {
-  grid-area: Div5;
-}
-.div6 {
-  grid-area: Div6;
-}
 
 
 .parent > .card{
@@ -186,24 +147,6 @@ footer {
 @media screen and (max-width: 440px) {
   #hero-section {
     margin: 0 2rem;
-  }
-
-  .parent{
-    grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(6, 0fr);
-  grid-template-areas: 
-  "Div5"
-  "Div2"
-  "Div3"
-  "Div1"
-  "Div6"
-  "Div4"
-  ;
-  }
-
-  .parent > .col{
-    width: 100%;
-    height: auto;
   }
   
 }
